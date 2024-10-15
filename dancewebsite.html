@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web-Design</title>
+    <style>
+        *
+        {
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .logo
+        { 
+            /* background-color: blue; */
+            float: left;
+            height:73px;
+            width: 300px;
+            padding-top:10px;
+            padding-left: 30px; 
+        }
+        .nav_bar
+        {
+            /* background-color: aqua; */
+            float: left;
+            padding-left:100px;
+            padding-right: 60px;
+        }
+        ul li
+        {
+            display: inline-block;
+            height: 60px;
+            width:90px;
+            padding-top: 15px;
+            padding-left: 12px;
+            padding-right: 12px;
+            list-style-type:none;
+            text-align: center;
+            font-weight:700;
+        }
+        ul li a{
+            text-decoration: none;
+            color: black;
+            cursor: pointer;
+            transition: 0.5ms;
+        }
+        ul li a:hover
+        {
+            /* background-color: blue; */
+            font-size: larger;
+            border-radius:7px;
+            background-image: linear-gradient(45deg,#df4881,#c430d7);
+        }
+     .container
+        {
+            
+            border:2px solid red;
+            /* background-color: aqua; */
+            width: 100%;
+            height: 30%;
+            display: inline;
+            margin-top: 40px;
+        }
+    .hi
+    {
+        width:440px;
+        height:340px;
+        float:left;
+        padding-left:70px;
+        padding-top:85px;
+        /* background-color: green;  */
+    }
+    .hi .dance
+    {
+        font-size: 50px;
+        font-weight: bold;
+        color:royalblue;
+    }
+    .hi .nextext
+    {
+        font-size: 25px;
+        font-weight: 400;
+        color: green;
+    }
+    .image
+    {
+        /* background-color: blue;  */
+        padding-left:7px;
+        padding-top:12px;
+    }
+    #aboutus-btn
+    {
+        width:30%;
+        height:46px;
+        text-align: center;
+        border-radius: 7px;
+        background-color:orangered;
+        border: 2px solid white;
+        color:white;
+        transition: 0.5ms;
+    }
+    #contact
+    {
+        width:30%;
+        height:46px;
+        text-align: center;
+        border-radius: 7px;
+        background-color:blue;
+        border: 2px solid white;
+        color:white;
+        transition:0.5ms;
+    }
+    #aboutus-btn:hover,#contact:hover
+    {
+       cursor: pointer;
+       width:30%;
+       height:46px;
+       background-image: linear-gradient(45deg,#df4881,#c430d7);
+    }
+    #signup-btn:hover
+    {
+        cursor: pointer;
+        width:10%;
+        height:46px;
+        background-image: linear-gradient(45deg,#df4881,#c430d7);;
+    }
+    .welcome
+    {
+         width:100%;
+         height:200px;
+         /* background-color: #df4881;  */
+         color:black;
+         padding-top:200px;
+         text-align: center;
+    }
+    .stud
+    {
+        font-size: 45px;
+    }
+    #signup-btn
+    {
+        width:10%;
+        height:46px;
+        text-align: center;
+        border-radius: 7px;
+        background-color:blue;
+        border: 2px solid white;
+        color:white;
+    }
+    .classes{
+        height:30px;
+        padding-top:60px;
+        padding-left:55px;
+        font-size: 40px;
+        font-weight: 300;
+    }
+    .boxes
+    {
+        height:500px;
+        display: grid;
+        grid-template-columns: 212px 212px 212px 212px;
+        grid-template-rows: 90px 90px 90px 90px;
+        row-gap: 120px;
+        column-gap:55px;
+    }
+    .d
+    {
+        background-color: rgb(180, 177, 177);
+        border: 2px solid white;
+        width:245px;
+        height:100px;
+        margin-left: 150px;
+        margin-top: 70px;
+        border-radius: 7px;
+        color:white;
+        justify-self: center;
+        text-align: center;
+        padding-top:89px;
+        font-size:24px;
+        transition: 0.1s;
+    }
+    #dance_123
+    {
+        background-color: rgb(209, 99, 63);
+    }
+    .d:hover
+    {
+        background-color: rgb(209, 99, 63);
+    }
+     .image2{
+        width:100%;
+        height:900px;
+        margin-left: 150px;
+        margin-top: 70px;
+        justify-self: center;
+        text-align: center;
+        font-size:24px;
+        padding-top:42px;
+     }
+    .opening
+    {
+        width: 90%;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content:flex-start;
+        padding-left:61px;
+    }
+    .openhr
+    {
+       font-size:45px;
+       font-weight:400;
+    }
+    .openhr2
+    {
+        font-size:20px;
+        font-weight: 300px;
+        font-family: cursive;
+        color:green;
+    }
+    .schedule
+    {
+        /* background-color:aqua; */
+        width:90%;
+        height:450px;
+        padding-left:100px;
+        background-image: url('html/images/dancer-bg.png');
+        background-repeat: repeat;
+        background-attachment: cover;
+        background-origin: padding-box;
+        background-position: top;
+    }
+    .time22 li
+    {
+       text-transform: capitalize;
+       font-family: cursive;
+       font-size: 20px;
+       font-weight:200;
+       color:indigo;
+    }
+    .Categories
+    {
+        text-transform: uppercase;
+        color: indigo;
+        font-size:25px;
+        padding-top: 20px;
+        padding-left:20px;
+    }
+    fieldset
+    {
+        border-radius: 12px;
+        width:800px;
+        border: 2px solid black;
+    }
+    .shows
+    {
+        display: flex;
+        justify-content: center;
+        font-size: 30px;
+        font-family: cursive;
+        font-weight: 300px;
+    }
+    .showsn
+    {
+        display: flex;
+        justify-content: center;
+        font-size: 20px;
+        font-family: cursive;
+        font-weight: 100px;
+        color: green;
+        height: 20px; 
+    }
+    .heading1
+    {
+        width:85%;
+        height: 130px;
+        margin-left: 90px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .subheading1
+    {
+       
+        background-color: rgb(244, 235, 235);
+        width: 700px;
+        padding-left: 15px;
+        margin-left: auto;
+    }
+    .subheading2
+    {   
+        width:330px;
+    }
+    .x{
+       font-size:30px;
+       font-family: cursive;
+       font-weight: 300;
+    }
+    .dummy
+    {
+        font-weight: 150;
+        font-size: 19px;
+    }
+    .heading2
+    {
+         margin-top:190px;
+         width:100%;
+         height: 130px;
+         margin-left: 90px;
+         display: grid;
+         grid-template-columns:245px 60px;
+    }
+    .subheading3
+    {
+        width:30px;
+    }
+    .subheading4
+    {
+        background-color: rgb(244, 235, 235);
+        width: 720px;
+        padding-left: 15px;
+        margin-right: 30px;
+    }
+   .heading3
+   {
+        margin-top: 200px;
+        width:85%;
+        height: 130px;
+        margin-left: 90px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+   }
+   
+   .subheading5
+    {
+       
+        background-color: rgb(244, 235, 235);
+        width: 700px;
+        padding-left: 15px;
+        margin-left: auto;
+    }
+    .subheading6
+    {   
+        width:330px;
+    }
+    .reg_mssg
+    {
+        width:100%;
+        height: 820px;
+        margin-top:370px;
+        background-image: url('https://wallpapercave.com/wp/jHX8vgU.jpg');
+        background-repeat: no-repeat;
+        background-attachment: cover;
+        opacity:60%;
+    }
+    .reg_box
+    {
+        width: 30%;
+        height: 200px;
+        background-color: aliceblue;
+    }
+    .register
+    {
+        margin: auto;
+        width:100%;
+        height:130px;
+    }
+    .reg_box
+    {
+        margin:auto;
+        width: 60%;
+        height:60%;
+        border-radius: 7px;
+        background-color:violet;
+    }
+    #registerx
+    {
+        text-transform: uppercase;
+        font-size: 30px;
+        text-align: center;
+        font-family: cursive;
+        width:100%;
+        height: 50px;
+        color: blue;
+        padding-top:10px;
+        background-color: rgb(189, 184, 184);
+        box-shadow: 0 15px 40px rgba(0,0,0,0.5); 
+    }
+   
+    #fname,#fname2,#fphone,#fcon,#femail,#fpassword
+    {
+      
+        width: 50%;
+        height: 40px;
+        float:left;
+        display: flex;
+        justify-content: center;
+        font-size: 28px;
+        font-family: cursive;
+        color:blue;
+        position: relative;
+        top:22px;
+    }
+    #fnamebox,#fnamebox2,#fphonebox,#fconbox,#femailbox,#fpasswordbox
+    {
+       
+        width: 50%;
+        height: 40px;
+        float: right;
+        justify-content:flex-start ;
+        position: relative;
+        top:22px;
+    }
+    input.fnamee, input.fnamee2, input.fphone, input.femail, input.fpassword, input.fcon
+    {
+        width:80%;
+        height:29px;
+        border-bottom-left-radius: 7px;
+        border-top-right-radius: 7px;
+        border-bottom: 2px solid blue;
+        border-top:2px solid green;
+        outline: none;
+    }
+    small{
+        visibility: hidden;
+        color:red;
+    }
+    .submit,.reset
+    {
+        position: relative;
+        width:15%;
+        height:30px;
+        left:20px;
+    }
+    .button234
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height:60px;
+        padding-top: 25px;
+    }
+    .submit{
+        background-color:rgb(0, 140, 0);
+        border:1px solid black;
+        font-family: cursive;
+        color:azure;
+    }
+    .reset
+    {
+        background-color:red;
+        border: 1px solid black;
+        font-family: cursive;
+        color: azure;
+    }
+    .footb
+    {
+        background-color:rgba(0, 0, 0, 0.897);
+        width:100%;
+        height:300px;
+    }
+    .Address,.OpeningTime,.Newsletter
+    {
+        width:25.3%;
+        height:250px;
+        float: left;
+        margin-left: 70px;
+        padding-left: 25px;
+        padding-top: 25px;
+    }
+    #add,#opt,#nl
+    {
+        font-size: 27px;
+        color: azure;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: 300;
+        position: relative;
+        left:22px;
+    }
+    li
+    {
+        font-size:16px;
+        color: azure;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: 200;
+    }
+    .dd{
+        font-size:16px;
+        color: azure;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: 150;
+
+    }
+    .femail2
+    {
+        width:244px;
+        height: 35px;
+        border: 2px solid gray;
+    }
+    .subscribe
+    {
+        color: azure;
+        width: 160px;
+        height:45px;
+        background-color: rgba(0, 0, 0, 0.897);
+        border: 2px solid gray;
+        text-transform: uppercase;
+    }
+    footer
+    {
+       background-color: black;
+       color: azure;
+       text-align: center;
+    }
+    </style>
+</head>
+<body>
+        <header>
+        <nav>
+        <div class="logo">
+            <img src="html/images/logo.png" alt="Dropbeats">
+        </div>
+        <div class="nav_bar">
+            <ul class="navbar">
+                <li id="CapsHome"><a href="#" id="Home">HOME</a></li>
+                <li><a href="#" id="Trainings">TRAININGS</a></li>
+                <li><a href="#" id="Classes">CLASSES</a></li>
+                <li><a href="#" id="Shows">SHOWS</a></li>
+                <li><a href="#" id="Contact">CONTACT</a></li>   
+                <li><img src="html/images/search-icon.png" alt="search"></li>
+            </ul>
+        </div>
+        </nav>
+        </header>
+        <div class="hi">
+            <span class="dance">DANCE BEATS<br></span><br><br><span class="nextext">“Dance is your pulse, your heartbeat, your breathing. It’s the rhythm of your life. It’s the expression in time and movement, in happiness, joy, sadness, and envy.” – Jacques d’Amboise
+            </span><br><br><br>
+            <button id="aboutus-btn" name="About Us">About Us</button>
+            <button id="contact" name="Contact Us">Contact Us</button>
+        </div>
+        <div class="image"><img src="html/images/img-1.png"></div>
+        <div class="welcome">
+            <span class="stud">WELCOME NEW STUDENTS!</span><br><br><span>Sign up now to receive a 25-minute taster lesson - completely free!</span><br><br>
+            <button id="signup-btn">Click to SignUp</button>
+        </div>
+        <div class="classes">
+        CLASSES
+        </div>
+        <div class="boxes">
+            <div class="d" id="dance_123">Dancing</div>
+            <div class="d">Man</div>
+            <div class="d">Dancer</div>
+            <div class="image2"><img src="html/images/img-2.png"  height="330" width="320"></div>
+            <div class="d">People</div>
+            <div class="d">Girls</div>
+            <div class="d">HipHop</div>
+        </div>
+        <br><br><br><br>
+        <div class="opening">
+            <p><span class="openhr">Opening Hours</span><br><br><span class="openhr2">“There are shortcuts to happiness, and dancing is one of them.”</span>
+            </p>
+        </div>
+        <br>
+        <div class="schedule">
+            
+            <ul class="time22">
+                <fieldset>
+                <div class="Categories"><pre>Categories                      Timings                      Comments</pre></div><br>
+                <li><pre>hip hop                                             8pm-9:30pm                       Lorem, ipsum dolor.</pre></li><br>
+                <li><pre>kathakali                                           7am-8:30am                       sit amet consectetur.</li><br>
+                <li><pre>bharatnatyam                                  10am-11:30am                      adipisicing elit. Nam.</pre></li><br>
+                <li><pre>salsa                                                 3pm-4:30pm                      accusamus repudiandae </li><br>
+                <li><pre>odissi                                                6:30pm-8pm                      abacabadaba</pre></li><br>        
+                </fieldset>
+            </ul>
+        </div>
+        <br><br><br><br><br><br>
+        <div class="shows">
+            <p>SHOWS</p>
+        </div>
+        <div class="showsn">
+         Monthly shows are organised to enhance your skills
+        </div><br><br>
+        <div class="heading1">
+          <div class="subheading1"><span class="x">DeTaraxia</span><br><br><span class="dummy">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ea impedit consectetur vel fuga dolorem explicabo quisquam, facilis quas voluptatum velit magni incidunt rerum autem id aliquid, ipsam commodi quos nisi, recusandae ab quibusdam omnis nihil atque. Illo provident officiis maiores dolores veniam natus, recusandae deleniti consectetur, doloribus temporibus nihil sed aperiam repellat, omnis veritatis est architecto quaerat maxime. Unde.</span></div>
+          <div class="subheading2"><image src="html/images/img-3.png"></div><br>
+        </div>
+        <div class="heading2">
+            <div class="subheading3"><image src="html/images/img-4.png"></image></div>
+            <div class="subheading4"><span class="x">Jackson Squad</span><br><br><span class="dummy">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga itaque nesciunt a suscipit architecto sequi commodi porro repudiandae similique, quo voluptatibus id quod aut atque, et quasi? Enim deserunt asperiores voluptatum expedita eos corporis ratione, aperiam perferendis fuga dignissimos nemo fugiat harum atque, itaque delectus non esse eaque quasi officiis tempore, labore vitae! Iusto voluptatibus earum mollitia ratione omnis eum tenetur facere saepe quo fugit! Quod minus optio est id iure quis!</span></div>
+        </div>
+        <div class="heading3">
+            <div class="subheading5"><span class="x">Rhytmic Beats</span><br><br><span class="dummy">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ea impedit consectetur vel fuga dolorem explicabo quisquam, facilis quas voluptatum velit magni incidunt rerum autem id aliquid, ipsam commodi quos nisi, recusandae ab quibusdam omnis nihil atque. Illo provident officiis maiores dolores veniam natus, recusandae deleniti consectetur, doloribus temporibus nihil sed aperiam repellat, omnis veritatis est architecto quaerat maxime. Unde.</span></div>
+            <div class="subheading6"><image src="html/images/img-5.png"></div><br>
+        </div>
+        <div class="reg_mssg">
+            <div class="register"></div>
+            <div class="reg_box">
+                <div id="registerx">Register with Us</div>
+                <form name="myform" onsubmit="return validation()">
+                    <div class="Firstname" id="fname"><p>Firstname:</p></div>
+                    <div class="Firstname" id="fnamebox"><input type="text" placeholder="Enter your firstname" class="fnamee" name="fname" required><br><small>*Invalid Firstname</small></div>
+                    <br><br><br><div class="Secondname" id="fname2"><p>Lastname:</p></div>
+                    <div class="Secondname" id="fnamebox2"><input type="text" placeholder="Enter your lastname" class="fnamee2" name="fname2" required><br><small>*Invalid Secondname</small></div>
+                    <br><br><br><div class="PhoneNum" id="fphone"><p>Mobile Number:</p></div>
+                    <div class="PhoneNum" id="fphonebox"><input type="number" placeholder="Enter your mobile no" class="fphone" name="fphone2" required><br><small>*Invalid Mobile Number</small></div>
+                    <br><br><br><div class="Email" id="femail"><p>Email:</p></div>
+                    <div class="Email" id="femailbox"><input type="email" placeholder="Enter your email" class="femail" name="femail2" required><br><small>*Invalid Email Number</small></div>
+                    <br><br><br><div class="Password" id="fpassword"><p>Password:</p></div>
+                    <div class="Password" id="fpasswordbox"><input type="password" placeholder="Enter password" class="fpassword" name="fpassword2" required><br><small>*Invalid Password</small></div>
+                    <br><br><br><div class="Conpass" id="fcon"><p>Confirm Password:</p></div>
+                    <div class="Conpass" id="fconbox"><input type="password" placeholder="Confirm your password" class="fcon" name="fcon2" required><br><small>*Password and Confirm didn't match</small></div>
+                    <br><br><br><div class="button234">
+                        <input type="submit" class="submit" value="Submit" name="submit"> <input type="reset" class="reset" value="Reset" name="reset">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="footb">
+            <div class="Address">
+                <p id="add">Address</p><br>
+                <ul>
+                    <pre><li><img src="html/images/map-icon.png">  Mumbai,Maharastra,India</li><br></pre>
+                    <pre><li><img src="html/images/call-icon.png">  +917595832473</li><br></pre>
+                    <pre><li><img src="html/images/mail-icon.png">  bt22ece064@gmail.com</li></pre>
+                </ul>
+            </div>
+            <div class="OpeningTime">
+                <p id="opt">Opening Time</p><br><br>
+                <pre><p class="dd">Hip Hop:          8pm-9:30pm</p><br></pre>
+                <pre><p class="dd">Kathakali:        7am-8:30am </p><br></pre>
+                <pre><p class="dd">Bharatnatyam: 10am-11:30am </p><br></pre>
+                <pre><p class="dd">Salsa:               3pm-4:30pm </p><br></pre>
+                <pre><p class="dd">Odissi:             6:30pm-8:00pm </p><br></pre>
+            </div>
+            <div class="Newsletter">
+                <p id="nl">Newsletter</p><br><br>
+                <input type="email" placeholder="Enter your email" class="femail2" name="femail3" required><br><br>
+                <button class="subscribe">Subscribe</button><br><br><br>
+                <pre>  <img src="html/images/fb-icon.png">   <img src="html/images/twitter-icon.png">   <img src="html/images/linkedin-icon.png"></pre>
+            </div>
+        </div>
+            <footer>
+                2023 All Rights Reserved by HTML Design&copy;
+            </footer>
+            <script type="text/javascript">
+                function passVal(password)
+                {
+                    let sp=0;
+                    let dig=0;
+                    let alph=0;
+                    for(let i=0;i<password.length;i++)
+                    {
+                        var pc = password[i].charCodeAt(0);
+                        if((pc>=65&&pc<=90)||(pc>=97&&pc<=122))
+                        alph++;
+                        else if(pc>=48&&pc<=57)
+                        dig++;
+                        else
+                        sp++;
+                    }
+                    if(sp==0||dig==0)
+                    return false;
+                    else
+                    return true;
+                }
+                function validation()
+                {
+                    let username=document.forms["myform"]["fname"].value;
+                    if(username.length<5||username.length>15)
+                    {
+                    alert("Firstname should have 5 to 15 characters!");    
+                    return false;
+                    }
+                    if(!(username[0]==username[0].toUpperCase()))
+                    {
+                        alert("Firstname should be capitalized!");
+                        return false;
+                    }
+                    let lastname=document.forms["myform"]["fname2"].value;
+                    if(lastname.length<3||lastname.length>12)
+                    {
+                    alert("LastName should have 3 to 12 characters!");    
+                    return false;
+                    }
+                    if(!(lastname[0]==lastname[0].toUpperCase()))
+                    {
+                        alert("Lastname should be capitalized!");
+                        return false;
+                    }
+                    let mobileno=document.forms["myform"]["fphone2"].value;
+                    if(!(mobileno.length==10)||(!(mobileno[0]=='7'||mobileno[0]=='9')))
+                    {
+                        alert("Invalid Mobile Number!");
+                        return false;
+                    }
+                    let password=document.forms["myform"]["fpassword2"].value;
+                    if(password.length<8)
+                    {
+                        alert("Password should have minimum 8 characters!");
+                        return false;
+                    }
+                    if(!(passVal(password)))
+                    {
+                        alert("Password should consist of atleast 1 special character and 1 numeric digit!1");
+                        return false;
+                    }
+                    let conp=document.forms["myform"]["fcon2"].value;
+                    if(!(conp==password))
+                    {
+                        alert("Password and Confirm Password didnt match!");
+                        return false;
+                    }
+                    alert("Congratulations!You form has been submitted successfully");
+                    return true;
+                }
+            </script>
+</body>
+</html>
